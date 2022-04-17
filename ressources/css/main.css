@@ -83,7 +83,7 @@ header .navbars li a:hover {
 }
 
 .container-main .container-fluid {
-  width: 85%;
+  width: 90%;
   height: 565px;
   background: #F4D772;
   float: right;
@@ -139,6 +139,27 @@ header .navbars li a:hover {
           transform: translateX(-50%);
 }
 
+.container-main .container-fluid .group-title {
+  position: absolute;
+  bottom: 60px;
+  left: 82px;
+}
+
+.container-main .container-fluid .group-title h1 {
+  font-size: 192px;
+  line-height: 130px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  -webkit-text-stroke: 1px rgba(8, 8, 7, 0.8);
+  color: transparent;
+  text-transform: uppercase;
+  font-family: "Franklin Gothic Medium";
+}
+
+.container-main .container-fluid .group-title h1 span {
+  display: block;
+}
+
 .container-main .container-fluid .group-description {
   position: absolute;
   right: 130px;
@@ -182,5 +203,55 @@ header .navbars li a:hover {
   position: absolute;
   left: 0;
   bottom: -3px;
+}
+
+.container-main .container-fluid .group-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: initial;
+      -ms-flex-pack: initial;
+          justify-content: initial;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 790px;
+  height: 100px;
+  background: #FEFEFD;
+  padding: 0 60px;
+}
+
+.container-main .container-fluid .group-links .link {
+  margin: auto;
+}
+
+.container-main .container-fluid .group-links .link a {
+  color: #080807;
+  position: relative;
+  -webkit-transition: .2s ease-in;
+  transition: .2s ease-in;
+}
+
+.container-main .container-fluid .group-links .link a:hover {
+  color: rgba(8, 8, 7, 0.5);
+}
+
+.container-main .container-fluid .group-links .link a:hover::before {
+  width: 100%;
+}
+
+.container-main .container-fluid .group-links .link a::before {
+  content: "";
+  width: 50%;
+  height: 1.3px;
+  background: #080807;
+  position: absolute;
+  left: 0;
+  bottom: -7px;
+  -webkit-transition: .2s ease-in;
+  transition: .2s ease-in;
 }
 /*# sourceMappingURL=main.css.map */

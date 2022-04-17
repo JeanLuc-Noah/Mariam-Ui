@@ -60,7 +60,7 @@ header {
     height: auto;
 
     .container-fluid{
-        width: 85%;
+        width: 90%;
         height: 565px;
         background: $jaune;
         float: right;
@@ -105,6 +105,26 @@ header {
             transform: translateX(-50%);  
         }
 
+        .group-title{
+            position: absolute;
+            bottom: 60px;
+            left: 82px;
+
+            h1{
+                font-size: 192px;
+                line-height: 130px;
+                font-weight: 700;
+                letter-spacing: 0.04em;
+                -webkit-text-stroke: 1px rgba($noir, .8);
+                color: transparent;
+                text-transform: uppercase;
+                font-family: "Franklin Gothic Medium";
+
+                span{
+                    display: block;
+                }
+            }
+        }
         .group-description{
             position: absolute;
             right:130px;
@@ -143,6 +163,43 @@ header {
                         position: absolute;
                         left: 0;
                         bottom: -3px;
+                    }
+                }
+            }
+        }
+        .group-links{
+            @include positionFlex(initial, center);
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 790px;
+            height: 100px;
+            background: $blanche;
+            padding: 0 60px;
+
+            .link{
+                margin: auto;
+                a{
+                    color: $noir;
+                    position: relative;
+                    transition:  .2s ease-in;
+
+                    &:hover{
+                        color: rgba($noir, .5);
+
+                        &::before{
+                            width: 100%;
+                        }
+                    }
+                    &::before{
+                        content: "";
+                        width: 50%;
+                        height: 1.3px;
+                        background: $noir;
+                        position: absolute;
+                        left:0 ;
+                        bottom: -7px;
+                        transition:  .2s ease-in;
                     }
                 }
             }
