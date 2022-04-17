@@ -1,0 +1,27 @@
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+@font-face {
+    font-family: "CircularStd" ;
+    src: url("../police/CircularStd-Book.ttf");
+}
+body{
+    font-family: "CircularStd", sans-serif;
+}
+
+//Couleur
+$noir : #080807;
+$jaune : #F4D772;
+$move : #DEB4FF;
+$blanche : #FEFEFD;
+
+// mixins
+@mixin positionFlex($x, $y) {
+    display: flex;
+    justify-content: $x;
+    align-items: $y;
+}
